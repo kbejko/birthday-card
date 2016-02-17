@@ -1,11 +1,13 @@
 html,
 body {
-  background-color: #f3e5c9; }
+  background-color: #f3e5c9;
+}
 
 .container {
   height: 100vh;
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+}
 
 .envelope {
   background-color: tomato;
@@ -14,7 +16,8 @@ body {
   margin: -250px 0 0 -200px;
   position: absolute;
   top: 50%;
-  width: 400px; }
+  width: 400px;
+}
 
 .flap {
   border-top: 150px solid lightblue;
@@ -22,20 +25,21 @@ body {
   border-right: 200px solid transparent;
   cursor: pointer;
   position: relative;
-  top: 0; }
-
+  top: 0;
+}
 .flap-open {
   top: -150px;
+  // -webkit-transform: rotateX(180deg);
   transform: rotateX(180deg);
-  z-index: -2; }
-
+  z-index: -2;
+}
 .card {
   position: absolute;
-  top: 30px; }
-
+  top: 30px;
+}
 .show {
   background-color: snow;
-  background-image: url("images/coco1.JPG");
+  background-image: url('images/coco1.JPG');
   background-position: center;
   background-repeat: no-repeat;
   background-size: 80%;
@@ -46,19 +50,23 @@ body {
   position: absolute;
   top: -30px;
   left: 80px;
+  // -webkit-transition: top 900ms linear 500ms;
   transition: top 900ms linear 500ms;
-  z-index: -1; }
+  z-index: -1;
+}
 
 .show-card {
   transform: rotate(90deg);
+  // -webkit-transition: transition: cubic-bezier(0, 1.32, 1, 1) 500ms;
   transition: cubic-bezier(0, 1.32, 1, 1) 500ms;
-  z-index: 3; }
+  z-index: 3;
+}
 
 .show-card:hover,
 .show-card:focus,
 .show-card:active {
-  background-image: url("images/coco2.JPG"); }
-
+  background-image: url('images/coco2.JPG');
+}
 .show-card:hover::after {
   color: gold;
   content: "Gezuar Ditlindjen Rex!";
@@ -67,7 +75,9 @@ body {
   left: 25%;
   position: absolute;
   top: 48%;
-  transform: rotate(270deg); }
+  // -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
 
 .balloon {
   animation: float 5s ease-in-out infinite;
@@ -79,30 +89,30 @@ body {
   top: 100px;
   visibility: visible;
   width: 100px;
-  z-index: -1; }
-
+  z-index: -1;
+}
 .balloon-yellow {
   background: yellow;
-  left: 50px; }
-
+  left: 50px;
+}
 .balloon-blue {
   background: blue;
   left: 150px;
-  animation: float-opposite 5s ease-in-out infinite; }
-
+  animation: float-opposite 5s ease-in-out infinite;
+}
 .balloon-green {
   background: green;
-  left: 80px; }
-
+  left: 80px;
+}
 .balloon-pink {
   background: pink;
   left: 20px;
-  animation: float-opposite 5s ease-in-out infinite; }
-
+  animation: float-opposite 5s ease-in-out infinite;
+}
 .balloon-red {
   background: red;
-  left: 200px; }
-
+  left: 200px;
+}
 .balloon::before {
   content: "";
   position: absolute;
@@ -112,8 +122,8 @@ body {
   height: 0;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  border-bottom: 10px solid yellow; }
-
+  border-bottom: 10px solid yellow;
+}
 .balloon::after {
   content: "";
   position: absolute;
@@ -121,34 +131,40 @@ body {
   top: 135px;
   width: 1px;
   height: 200px;
-  background: rgba(33, 33, 33, 0.6); }
-
+  background: rgba(33, 33, 33, .6)
+}
 @keyframes float {
   0%, 100% {
-    transform: translateY(0) rotate(3deg); }
+    transform: translateY(0) rotate(3deg);
+  }
   50% {
-    transform: translateY(-25px) rotate(-10deg); } }
+    transform: translateY(-25px) rotate(-10deg);
+  }
+}
 @keyframes float-opposite {
   0%, 100% {
-    transform: translateY(0) rotate(-3deg); }
+    transform: translateY(0) rotate(-3deg);
+  }
   50% {
-    transform: translateY(25px) rotate(10deg); } }
+    transform: translateY(25px) rotate(10deg);
+  }
+}
 .balloon-show {
   top: -150px;
   transition: top 1s, z-index 3s ease-in-out;
-  z-index: 1; }
+  z-index: 1;
+}
 
 .pop {
   opacity: 0;
   visibility: hidden;
-  transition: visibility 0s ease-in-out 300ms, opacity 300ms; }
-
+  transition: visibility 0s ease-in-out 300ms, opacity 300ms;
+}
 h1 {
   color: gold;
   font-family: 'Noteworthy', cursive;
   font-size: 1em;
   position: relative;
   text-align: center;
-  top: 50px; }
-
-/*# sourceMappingURL=style.css.map */
+  top: 50px;
+}
