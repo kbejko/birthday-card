@@ -1,6 +1,6 @@
 html,
 body {
-  background-color: #f3e5c9; }
+  background-color: #D1E1E8; }
 
 .container {
   height: 100vh;
@@ -17,7 +17,7 @@ body {
   width: 400px; }
 
 .flap {
-  border-top: 150px solid lightblue;
+  border-top: 150px solid #FFCCBC;
   border-left: 200px solid transparent;
   border-right: 200px solid transparent;
   cursor: pointer;
@@ -60,7 +60,7 @@ body {
   background-image: url("images/coco2.JPG"); }
 
 .show-card:hover::after {
-  color: gold;
+  color: #FDD835;
   content: "Gezuar Ditlindjen Rex!";
   font-family: 'Noteworthy', cursive;
   font-size: 2em;
@@ -95,7 +95,7 @@ body {
   left: 80px; }
 
 .balloon-pink {
-  background: pink;
+  background: lightpink;
   left: 20px;
   animation: float-opposite 5s ease-in-out infinite; }
 
@@ -149,9 +149,9 @@ body {
   transition: visibility ease-in-out 300ms, opacity 300ms; }
 
 h1 {
-  color: gold;
+  color: #172894;
   font-family: 'Noteworthy', cursive;
-  font-size: 1em;
+  font-size: 1.5em;
   position: relative;
   text-align: center;
   top: 50px; }
