@@ -26,12 +26,17 @@ body {
   cursor: pointer;
   position: relative;
   top: 0;
+  &:hover {
+    top: -1px;
+  }
 }
+
 .flap-open {
-  top: -150px;
   transform: rotateX(180deg);
+  transform-origin: 0% 1px;
   z-index: -2;
 }
+
 .card {
   position: absolute;
   top: 30px;
